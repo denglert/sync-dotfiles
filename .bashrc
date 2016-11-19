@@ -1,5 +1,8 @@
+# The SSH command execution shell is a non-interactive shell, whereas your
+# normal shell is either a login shell or an interactive shell.
+
 # .bashrc
-#[[ $- == *i* ]] || return
+[[ $- == *i* ]] || return
 
 # - Source global definitions
 if [ -f /etc/bashrc ]; then
