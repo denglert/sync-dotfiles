@@ -6,6 +6,7 @@
 source ~/.vim/general/general.vim
 source ~/.vim/macros/macros.vim
 source ~/.vim/key-bindings/keys.vim
+source ~/.vim/plugin/settings.vim
 
 " - Color scheme - "
 colorscheme delek
@@ -30,15 +31,27 @@ filetype off
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
-" Packages:
+"""""""""""""""""""""
+" ---  Packages --- "
+"""""""""""""""""""""
+
+" - Vundle package intsaller
 Bundle 'gmarik/vundle'
+" - Supertab
 Bundle 'ervandew/supertab'
+" - Easymotion
 Bundle 'easymotion/vim-easymotion'
+" - Nerdtree file manager
 Bundle 'scrooloose/nerdtree'
-Bundle 'tpope/vim-obsession'
+" - Continuously updated session file
+Bundle 'tpope/vim-obsession' 
 "Bundle 'scrooloose/nerdcommenter'
 "Bundle 'msanders/snipmate.vim'
+" - Solarized colorscheme
 Bundle 'altercation/vim-colors-solarized'
+" - Relative/absolute line number toggle
 Bundle 'jeffkreeftmeijer/vim-numbertoggle'
+" - Autocompletion library for vim
+Bundle 'davidhalter/jedi-vim.git'
 
 filetype plugin indent on
