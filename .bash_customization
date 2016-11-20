@@ -1,0 +1,48 @@
+# Shell prompt
+# \u - username
+# \h - host
+# \w - working directory
+
+#exitstatus()
+#{
+#    if [[ $? != 0 ]]; then
+#      echo -e "\e[31mError\n"
+#    fi
+#}
+
+
+BLUE=$'\033[34m'
+DEFAULT=$'\033[39m'
+WHITE=$'\033[97m'
+
+#PS1='\[`$(exitstatus)`\]\[${BLUE}\]\u\[${DEFAULT}\]@\[\e[32m\]\h\[${DEFAULT}\]:\w\$\[${WHITE}\] '
+PS1='\[${BLUE}\]\u\[${DEFAULT}\]@\[\e[34m\]\h\[${DEFAULT}\]:\w\$\[${WHITE}\] '
+
+EC() { echo -e '\e[1;31m'Error, code: $?'\e[m'; }
+trap EC ERR
+
+#PS1='\e[32m\u\e[39m@\h:\w\$ \e[97m `if [ \$ = # ]; then echo "\[\033[01;32m\]ツ"; else echo "\[\033[01;31m\]✗"; fi`'
+
+# - Reset terminal formatting attributes when bash executes a command
+trap '[[ -t 1 ]] && tput sgr0' DEBUG
+
+# - Solarized dircolors
+eval `dircolors ~/.dir_colors/dircolors_solarized`
+
+### mc editor is vim
+export EDITOR=vim
+
+# Add an "alert" alias for long running commands.  Use like so:
+#   sleep 10; alert
+alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
+
+# for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
+HISTSIZE=1000
+HISTFILESIZE=2000
+
+# don't put duplicate lines or lines starting with space in the history.
+# See bash(1) for more options
+HISTCONTROL=ignoreboth
+
+# append to the history file, don't overwrite it
+shopt -s histappend

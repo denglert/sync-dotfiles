@@ -6,3 +6,7 @@ let g:relativemode = 0
 " --- jedi-vim settings --- "
 " - Don't activate on typing dot
 let g:jedi#popup_on_dot = 0
+
+" --- vim-solarized settings --- "
+" - Needed for transparent background
+hi Normal ctermbg=none

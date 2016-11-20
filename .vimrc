@@ -8,9 +8,6 @@ source ~/.vim/macros/macros.vim
 source ~/.vim/key-bindings/keys.vim
 source ~/.vim/plugin/settings.vim
 
-" - Color scheme - "
-colorscheme delek
-
 " - Show line number - "
 set number
 
@@ -54,4 +51,12 @@ Bundle 'jeffkreeftmeijer/vim-numbertoggle'
 " - Autocompletion library for vim
 Bundle 'davidhalter/jedi-vim.git'
 
+
 filetype plugin indent on
+
+" - Color scheme - "
+" colorscheme delek
+"
+set background=dark
+color solarized
+

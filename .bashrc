@@ -14,11 +14,15 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
+# - Bash shell prompt customization
+if [ -f ~/.bash_customization ]; then
+    . ~/.bash_customization
+fi
+
 # - Local, host specific user defined environment variables are loaded from here
 if [ -f ~/.bash_local ]; then
     . ~/.bash_local
 fi
-
 
 ##################################
 
