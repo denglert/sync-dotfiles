@@ -17,7 +17,7 @@ WHITE=$'\033[97m'
 #PS1='\[`$(exitstatus)`\]\[${BLUE}\]\u\[${DEFAULT}\]@\[\e[32m\]\h\[${DEFAULT}\]:\w\$\[${WHITE}\] '
 PS1='\[${BLUE}\]\u\[${DEFAULT}\]@\[\e[34m\]\h\[${DEFAULT}\]:\w\$\[${WHITE}\] '
 
-EC() { echo -e '\e[1;31m'Error, code: $?'\e[m'; }
+EC() { echo -e '\033[1;31m'Error, code: $?'\033[m'; }
 trap EC ERR
 
 #PS1='\e[32m\u\e[39m@\h:\w\$ \e[97m `if [ \$ = # ]; then echo "\[\033[01;32m\]ツ"; else echo "\[\033[01;31m\]✗"; fi`'
