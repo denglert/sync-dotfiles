@@ -10,7 +10,6 @@
 #    fi
 #}
 
-
 BLUE=$'\033[34m'
 DEFAULT=$'\033[39m'
 WHITE=$'\033[97m'
@@ -26,10 +25,9 @@ trap EC ERR
 # - Reset terminal formatting attributes when bash executes a command
 trap '[[ -t 1 ]] && tput sgr0' DEBUG
 
-# - Solarized dircolors
-eval `dircolors ~/.dir_colors/dircolors_solarized`
 
-### mc editor is vim
+
+# - mc editor is vim
 export EDITOR=vim
 
 # Add an "alert" alias for long running commands.  Use like so:
@@ -57,3 +55,14 @@ shopt -s checkwinsize
 # If set, the pattern "**" used in a pathname expansion context will
 # match all files and zero or more directories and subdirectories.
 #shopt -s globstar
+
+SYS=$(uname -s)
+if [ "${SYS}" == "Darwin" ]; then
+   # Do something under Mac OS X platform        
+	# - Colour terminal
+	export CLICOLOR=1
+elif [ "${SYS}" == "Linux" ]; then
+   # Do something under Linux platform        
+	# - Solarized dircolors
+	eval `dircolors ~/.dir_colors/dircolors_solarized`
+fi
