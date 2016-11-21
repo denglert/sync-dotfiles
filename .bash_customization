@@ -66,3 +66,6 @@ elif [ "${SYS}" == "Linux" ]; then
 	# - Solarized dircolors
 	eval `dircolors ~/.dir_colors/dircolors_solarized`
 fi
+
+# -- MC skin --- #
+export MC_SKIN=$HOME/.mc/solarized.ini
