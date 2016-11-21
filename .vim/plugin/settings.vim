@@ -12,5 +12,5 @@ let g:jedi#show_call_signatures = "0"
 " --- vim-solarized settings --- "
 " - Needed for transparent background
 hi Normal ctermbg=none
-"let g:solarized_visibility = "high"
-"let g:solarized_contrast = "high"
+let g:solarized_visibility = "high"
+let g:solarized_contrast = "high"
