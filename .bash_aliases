@@ -7,6 +7,7 @@ if [ "${SYS}" == "Darwin" ]; then
 elif [ "${SYS}" == "Linux" ]; then
 	alias ls='ls --color=auto'
 	alias ll='ls -alFh --color=auto'
+	alias l='ls -alFh --color=auto'
 	alias la='ls -A --color=auto'
 	alias grep='grep --color=auto'
 	alias fgrep='fgrep --color=auto'

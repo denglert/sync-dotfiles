@@ -68,4 +68,4 @@ elif [ "${SYS}" == "Linux" ]; then
 fi
 
 # -- MC skin --- #
-export MC_SKIN=$HOME/.mc/solarized.ini
+#export MC_SKIN=$HOME/.mc/solarized.ini
