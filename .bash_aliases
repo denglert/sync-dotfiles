@@ -19,3 +19,6 @@ alias ...="cd ../.."
 alias ....="cd ../.."
 
 alias shreload='source ~/.bashrc'
+
+alias att="tmux a -t"
+alias det="tmux detach"
