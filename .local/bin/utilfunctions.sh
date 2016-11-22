@@ -3,13 +3,15 @@
 # Define your function here
 sloc ()
 		{
+		echo -e "grep -R --color -n '$1':\n"
 		grep -R --color -n "$1" ./
 		}
 
 sloce ()
 		{
-		echo "seearching for: $1"
-		echo "excluding directories: $2"
+		echo -e "Searching for: $1"
+		echo -e "Excluding directories: $2"
+		echo -e "grep -R --color -n --exclude-dir='*${2}*' '$1':\n"
 		grep -R --color -n --exclude-dir="*${2}*" "$1" ./
 		}
 
