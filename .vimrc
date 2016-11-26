@@ -50,6 +50,8 @@ Bundle 'altercation/vim-colors-solarized'
 Bundle 'jeffkreeftmeijer/vim-numbertoggle'
 " - Autocompletion library for vim
 Bundle 'davidhalter/jedi-vim.git'
+" - Sublime like multiple cursors
+Bundle 'terryma/vim-multiple-cursors'
 
 
 filetype plugin indent on
@@ -59,4 +61,3 @@ filetype plugin indent on
 "
 set background=dark
 color solarized
-

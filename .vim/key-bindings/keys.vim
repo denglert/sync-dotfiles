@@ -17,7 +17,8 @@ imap -= // Debuggg <CR><BS><BS><BS>std::cerr << " " << std::endl;<Esc>6bli
 nmap 0p :!gnuplot %
 nmap 0l :!latexmk -pdf %
 nmap 0k :!tdr --style=note b AN
-nmap 0i :!latexmk -f -pdf tdk.tex
-nmap öü :!latexmk -pdf thesis.tex
 
 vnoremap <C-i> :call Incr()<CR>
+
+" --- vim-multiple-cursors settings --- "
+let g:NumberToggleTrigger="<C-l>"
