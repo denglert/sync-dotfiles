@@ -115,3 +115,5 @@ autocmd BufNew * if winnr('$') == 1 | tabmove99 | endif
 " Fixes weird characters in NERDTREE
 let g:NERDTreeDirArrows=0
 
+" Global format options
+autocmd FileType * setlocal formatoptions+=o formatoptions+=r
