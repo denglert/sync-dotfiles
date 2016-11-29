@@ -7,6 +7,7 @@ source ~/.vim/general/general.vim
 source ~/.vim/macros/macros.vim
 source ~/.vim/key-bindings/keys.vim
 source ~/.vim/plugin/settings.vim
+source ~/.vim_local
 
 " - Show line number - "
 set number
