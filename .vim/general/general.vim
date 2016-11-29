@@ -117,7 +117,3 @@ let g:NERDTreeDirArrows=0
 
 " Global format options
 autocmd FileType * setlocal formatoptions+=o formatoptions+=r
-
-" Tilde colour is same as the default colour
-" 12 = default colour
-highlight NonText ctermfg=12
