@@ -51,9 +51,11 @@ Bundle 'altercation/vim-colors-solarized'
 " - Relative/absolute line number toggle
 Bundle 'jeffkreeftmeijer/vim-numbertoggle'
 " - Autocompletion library for vim
-Bundle 'davidhalter/jedi-vim.git'
+ Bundle 'davidhalter/jedi-vim.git'
 " - Sublime like multiple cursors
 Bundle 'terryma/vim-multiple-cursors'
+" - YouCompleteMe
+"Bundle 'Valloric/YouCompleteMe'
 
 
 filetype plugin indent on
