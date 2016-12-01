@@ -52,6 +52,8 @@ Bundle 'jeffkreeftmeijer/vim-numbertoggle'
 Bundle 'davidhalter/jedi-vim.git'
 " - Sublime like multiple cursors
 Bundle 'terryma/vim-multiple-cursors'
+" - Ag search
+Bundle 'rking/ag.vim'
 
 
 filetype plugin indent on
