@@ -19,6 +19,8 @@ alias ...="cd ../.."
 alias ....="cd ../.."
 
 alias shreload='source ~/.bashrc'
+alias dotpull="cd ~/lib/sys-config/sync-dotfiles; git pull; cd -"
+alias dotstatus="cd ~/lib/sys-config/sync-dotfiles; git status; cd -"
 
 alias att="tmux a -t"
 alias det="tmux detach"

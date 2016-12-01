@@ -1,12 +1,14 @@
 " --------------------- "
 " ---    .vimrc     --- "
 " --------------------- "
-
+"
 " - Import - "
 source ~/.vim/general/general.vim
 source ~/.vim/macros/macros.vim
 source ~/.vim/key-bindings/keys.vim
 source ~/.vim/plugin/settings.vim
+source ~/.vim_local
+
 
 " - Show line number - "
 set number
@@ -49,17 +51,23 @@ Bundle 'altercation/vim-colors-solarized'
 " - Relative/absolute line number toggle
 Bundle 'jeffkreeftmeijer/vim-numbertoggle'
 " - Autocompletion library for vim
-Bundle 'davidhalter/jedi-vim.git'
+ Bundle 'davidhalter/jedi-vim.git'
 " - Sublime like multiple cursors
 Bundle 'terryma/vim-multiple-cursors'
 " - Ag search
 Bundle 'rking/ag.vim'
+" - YouCompleteMe
+"Bundle 'Valloric/YouCompleteMe'
 
 
 filetype plugin indent on
 
 " - Color scheme - "
 " colorscheme delek
-"
+
 set background=dark
 color solarized
+
+" Tilde colour is same as the default colour
+" 12 = default colour
+highlight NonText ctermfg=12
