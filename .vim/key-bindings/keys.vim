@@ -22,3 +22,7 @@ vnoremap <C-i> :call Incr()<CR>
 
 " --- vim-multiple-cursors settings --- "
 let g:NumberToggleTrigger="<C-l>"
+
+
+" --- Perform arithmetic calculation --- "
+nnoremap Q 0yt=A<C-r>=<C-r>"<CR><Esc>

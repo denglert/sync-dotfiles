@@ -7,8 +7,10 @@ source ~/.vim/general/general.vim
 source ~/.vim/macros/macros.vim
 source ~/.vim/key-bindings/keys.vim
 source ~/.vim/plugin/settings.vim
-source ~/.vim_local
 
+if filereadable(expand("~/.vim.local"))
+	source ~/.vim_local
+endif
 
 " - Show line number - "
 set number
@@ -28,7 +30,7 @@ set statusline=%f\ \ \ \ %l\:%c
 filetype off
 
 set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+call vundle#begin()
 
 """""""""""""""""""""
 " ---  Packages --- "
@@ -59,7 +61,7 @@ Bundle 'rking/ag.vim'
 " - YouCompleteMe
 "Bundle 'Valloric/YouCompleteMe'
 
-
+call vundle#end() " required
 filetype plugin indent on
 
 " - Color scheme - "
