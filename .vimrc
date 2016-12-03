@@ -12,6 +12,7 @@ if filereadable(expand("~/.vim.local"))
 	source ~/.vim_local
 endif
 
+
 " - Show line number - "
 set number
 
@@ -30,7 +31,7 @@ set statusline=%f\ \ \ \ %l\:%c
 filetype off
 
 set rtp+=~/.vim/bundle/vundle/
-call vundle#begin()
+call vundle#rc()
 
 """""""""""""""""""""
 " ---  Packages --- "
@@ -61,7 +62,7 @@ Bundle 'rking/ag.vim'
 " - YouCompleteMe
 "Bundle 'Valloric/YouCompleteMe'
 
-call vundle#end() " required
+
 filetype plugin indent on
 
 " - Color scheme - "
