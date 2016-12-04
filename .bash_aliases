@@ -1,3 +1,4 @@
+# - Terminal --color=auto option
 SYS=$(uname -s)
 if [ "${SYS}" == "Darwin" ]; then
    # Do something under Mac OS X platform        
@@ -14,13 +15,19 @@ elif [ "${SYS}" == "Linux" ]; then
 	alias egrep='egrep --color=auto'
 fi
 
+# - Change directory
 alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../.."
 
+# - .bashrc reload
 alias shreload='source ~/.bashrc'
+
+# - sync-dotfiles
 alias dotpull="cd ~/lib/sys-config/sync-dotfiles; git pull; cd -"
 alias dotstatus="cd ~/lib/sys-config/sync-dotfiles; git status; cd -"
 
-alias att="tmux a -t"
+# - Tmux
+alias tmux="tmux -2"
+alias att="tmux -2 a -t"
 alias det="tmux detach"

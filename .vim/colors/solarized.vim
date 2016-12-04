@@ -281,6 +281,7 @@ elseif (has("gui_running") && g:solarized_degrade == 1)
     let s:cyan        = "#00afaf"
     let s:green       = "#5f8700"
 elseif g:solarized_termcolors != 256 && &t_Co >= 16
+"	echo "g:solarized_termcolors != 256 && &t_Co >= 16"
     let s:vmode       = "cterm"
     let s:base03      = "8"
     let s:base02      = "0"
@@ -299,23 +300,41 @@ elseif g:solarized_termcolors != 256 && &t_Co >= 16
     let s:cyan        = "6"
     let s:green       = "2"
 elseif g:solarized_termcolors == 256
-    let s:vmode       = "cterm"
-    let s:base03      = "234"
-    let s:base02      = "235"
-    let s:base01      = "239"
-    let s:base00      = "240"
-    let s:base0       = "244"
-    let s:base1       = "245"
-    let s:base2       = "187"
-    let s:base3       = "230"
-    let s:yellow      = "136"
-    let s:orange      = "166"
-    let s:red         = "124"
-    let s:magenta     = "125"
-    let s:violet      = "61"
-    let s:blue        = "33"
-    let s:cyan        = "37"
-    let s:green       = "64"
+"	echo "g:solarized_termcolors == 256"
+     let s:vmode       = "cterm"
+     let s:base03      = "8"
+     let s:base02      = "0"
+     let s:base01      = "10"
+     let s:base00      = "11"
+     let s:base0       = "12"
+     let s:base1       = "14"
+     let s:base2       = "7"
+     let s:base3       = "15"
+     let s:yellow      = "3"
+     let s:orange      = "9"
+     let s:red         = "1"
+     let s:magenta     = "5"
+     let s:violet      = "13"
+     let s:blue        = "4"
+     let s:cyan        = "6"
+     let s:green       = "2"
+" Default:
+"    let s:base03      = "234"
+"    let s:base02      = "235"
+"    let s:base01      = "239"
+"    let s:base00      = "240"
+"    let s:base0       = "244"
+"    let s:base1       = "245"
+"    let s:base2       = "187"
+"    let s:base3       = "230"
+"    let s:yellow      = "136"
+"    let s:orange      = "166"
+"    let s:red         = "124"
+"    let s:magenta     = "125"
+"    let s:violet      = "61"
+"    let s:blue        = "33"
+"    let s:cyan        = "37"
+"    let s:green       = "64"
 else
     let s:vmode       = "cterm"
     let s:bright      = "* term=bold cterm=bold"
@@ -359,6 +378,7 @@ endif
     let s:none            = "NONE"
     let s:none            = "NONE"
     let s:t_none          = "NONE"
+    let s:b               = "NONE"
     let s:n               = "NONE"
     let s:c               = ",undercurl"
     let s:r               = ",reverse"
@@ -412,9 +432,11 @@ endif
 " Overrides dependent on user specified values and environment "{{{
 " ---------------------------------------------------------------------
 if (g:solarized_bold == 0 || &t_Co == 8 )
+"	 echo "g:solarized_bold == 0 || &t_Co == 8"
     let s:b           = ""
     let s:bb          = ",bold"
 else
+"	echo "else"
     let s:b           = ",bold"
     let s:bb          = ""
 endif
@@ -538,6 +560,7 @@ endif
 
 exe "hi! Normal"         .s:fmt_none   .s:fg_base0  .s:bg_back
 
+"exe "hi! Comment"        .s:fmt_ital   .s:fg_base01 .s:bg_none
 exe "hi! Comment"        .s:fmt_ital   .s:fg_base01 .s:bg_none
 "       *Comment         any comment
 
@@ -770,8 +793,8 @@ exe "hi! javaScript"        .s:fmt_none .s:fg_yellow .s:bg_none
 
 " Python highlighting "{{{
 " ---------------------------------------------------------------------
-
-exe "hi! pythonSelf"     . s:fg_magenta  .s:bg_none   .s:fmt_none
+exe "hi! pythonClass"    "ctermfg='136'" "cterm='NONE,bold,underline'"
+exe "hi! pythonSelf"     .s:fmt_none .s:fg_magenta  .s:bg_none   
 "}}}
 
 " perl highlighting "{{{

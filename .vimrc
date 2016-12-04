@@ -50,7 +50,7 @@ Bundle 'tpope/vim-obsession'
 "Bundle 'scrooloose/nerdcommenter'
 "Bundle 'msanders/snipmate.vim'
 " - Solarized colorscheme
-Bundle 'altercation/vim-colors-solarized'
+" Bundle 'altercation/vim-colors-solarized'
 " - Relative/absolute line number toggle
 Bundle 'jeffkreeftmeijer/vim-numbertoggle'
 " - Autocompletion library for vim
@@ -68,6 +68,7 @@ filetype plugin indent on
 " - Color scheme - "
 " colorscheme delek
 
+"set t_Co=256
 set background=dark
 color solarized
 
