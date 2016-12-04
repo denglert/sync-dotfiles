@@ -1,5 +1,6 @@
 " Nerd toggle
 nmap <F2> :NERDTreeToggle<cr>
+nmap <F3> :NERDTreeFind<cr>
 
 " Exit highlight mode when pressing the <ESC> button
 nnoremap <silent> <esc> :noh<cr><esc>
