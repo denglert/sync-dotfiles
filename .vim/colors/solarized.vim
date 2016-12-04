@@ -281,7 +281,7 @@ elseif (has("gui_running") && g:solarized_degrade == 1)
     let s:cyan        = "#00afaf"
     let s:green       = "#5f8700"
 elseif g:solarized_termcolors != 256 && &t_Co >= 16
-"	echo "g:solarized_termcolors != 256 && &t_Co >= 16"
+" 	echo "g:solarized_termcolors != 256 && &t_Co >= 16"
     let s:vmode       = "cterm"
     let s:base03      = "8"
     let s:base02      = "0"
@@ -307,7 +307,9 @@ elseif g:solarized_termcolors == 256
      let s:base01      = "10"
      let s:base00      = "11"
      let s:base0       = "12"
-     let s:base1       = "14"
+  "  let s:base0       = "255"
+  "  let s:base1       = "14"
+     let s:base1       = "250" " <- switched to a brighted white
      let s:base2       = "7"
      let s:base3       = "15"
      let s:yellow      = "3"
@@ -561,7 +563,7 @@ endif
 exe "hi! Normal"         .s:fmt_none   .s:fg_base0  .s:bg_back
 
 "exe "hi! Comment"        .s:fmt_ital   .s:fg_base01 .s:bg_none
-exe "hi! Comment"        .s:fmt_ital   .s:fg_base01 .s:bg_none
+exe "hi! Comment"        .s:fmt_none   .s:fg_base01 .s:bg_none
 "       *Comment         any comment
 
 exe "hi! Constant"       .s:fmt_none   .s:fg_cyan   .s:bg_none
