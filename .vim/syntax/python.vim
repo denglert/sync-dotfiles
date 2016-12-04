@@ -566,7 +566,7 @@ if version >= 508 || !exists("did_python_syn_inits")
   HiLink pythonBuiltinObj       Structure
   HiLink pythonBuiltinFunc      Function
 
-  HiLink pythonSelf             Special
+  HiLink pythonSelf             PythonSelf
 
   HiLink pythonExClass          Structure
 
@@ -574,5 +574,3 @@ if version >= 508 || !exists("did_python_syn_inits")
 endif
 
 let b:current_syntax = "python"
-
-
