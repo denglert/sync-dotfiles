@@ -63,6 +63,10 @@ Bundle 'rking/ag.vim'
 "Bundle 'Valloric/YouCompleteMe'
 " - Fuzzy file finder
 Bundle 'kien/ctrlp.vim'
+" - Git integration with vim
+Bundle 'tpope/vim-fugitive'
+" - Syntax checker
+Bundle 'vim-syntastic/syntastic'
 
 
 filetype plugin indent on
