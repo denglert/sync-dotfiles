@@ -27,3 +27,15 @@ let g:NumberToggleTrigger="<C-l>"
 
 " --- Perform arithmetic calculation --- "
 nnoremap Q 0yt=A<C-r>=<C-r>"<CR><Esc>
+
+" - Easier moving of code blocks
+" Try to go into visual mode (v), thenselect several lines of code here and
+" then press ``>`` several times.
+vnoremap < <gv  " better indentation
+vnoremap > >gv  " better indentation
+
+" - Leader key binding
+let mapleader = ","
+
+" map sort function to a key
+vnoremap <Leader>s :sort<CR>

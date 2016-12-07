@@ -67,6 +67,12 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'tpope/vim-fugitive'
 " - Syntax checker
 Bundle 'vim-syntastic/syntastic'
+" - python-mode
+"Bundle 'klen/python-mode'
+" - Conda support for vim
+" Note: This seems to fix the issue with loading numpy and matplotlib in
+" jedi-vim
+Bundle 'cjrh/vim-conda'
 
 
 filetype plugin indent on

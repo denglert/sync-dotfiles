@@ -1,4 +1,4 @@
-" Swap file storage
+" - Swap file storage
 if isdirectory($HOME . '/.vim/swap') == 0
  :silent !mkdir -p ~/.vim/swap >/dev/null 2>&1
 endif
@@ -7,8 +7,8 @@ set directory+=~/.vim/swap//
 set directory+=~/tmp//
 set directory+=.
 
+" - Backupdir
 set backupdir=~/.vim/backup/
-
 
 set langmenu=en_US.UTF-8    " sets the language of the menu (gvim)
 "language en                 " sets the language of the messages / ui (vim)
@@ -108,12 +108,15 @@ if &term =~ '^screen'
 endif
 
 
-" NERDTree tab open at the end FIX
+" - NERDTree tab open at the end FIX
 " move tabs to the end for new, single buffers (exclude splits)
 autocmd BufNew * if winnr('$') == 1 | tabmove99 | endif
 
-" Fixes weird characters in NERDTREE
+" - Fixes weird characters in NERDTREE
 let g:NERDTreeDirArrows=0
 
-" Global format options
+" - Global format options
 autocmd FileType * setlocal formatoptions+=o formatoptions+=r
+
+" - Set clipboard to be able to pass it to the system keyboard
+set clipboard=unnamed
