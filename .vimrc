@@ -60,7 +60,13 @@ Bundle 'terryma/vim-multiple-cursors'
 " - Ag search
 Bundle 'rking/ag.vim'
 " - YouCompleteMe
-" Bundle 'Valloric/YouCompleteMe'
+"Bundle 'Valloric/YouCompleteMe'
+" - Fuzzy file finder
+Bundle 'kien/ctrlp.vim'
+" - Git integration with vim
+Bundle 'tpope/vim-fugitive'
+" - Syntax checker
+Bundle 'vim-syntastic/syntastic'
 
 
 filetype plugin indent on
