@@ -36,6 +36,6 @@ if [ -f ~/.local/bin/bashmarks.sh ]; then
 fi
 
 # - Source utilfunctions
-if [ -f . ~/.local/bin/utilfunctions.sh ]; then
+if [ -f ~/.local/bin/utilfunctions.sh ]; then
 	. ~/.local/bin/utilfunctions.sh
 fi
