@@ -45,3 +45,6 @@ vnoremap <Leader>s :sort<CR>
 
 " --- vim-syntastic toggle --- "
 nnoremap <C-w>E :SyntasticCheck<CR> :SyntasticToggleMode<CR>
+
+" --- Vimux run python --- "
+map <Leader>p :call VimuxRunCommand("clear; python " . bufname("%"))<CR>

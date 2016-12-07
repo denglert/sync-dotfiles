@@ -49,31 +49,44 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'tpope/vim-obsession' 
 "Bundle 'scrooloose/nerdcommenter'
 "Bundle 'msanders/snipmate.vim'
+
 " - Solarized colorscheme
 " Bundle 'altercation/vim-colors-solarized'
+
 " - Relative/absolute line number toggle
 Bundle 'jeffkreeftmeijer/vim-numbertoggle'
+
 " - Autocompletion library for vim
 Bundle 'davidhalter/jedi-vim.git'
+
 " - Sublime like multiple cursors
 Bundle 'terryma/vim-multiple-cursors'
+
 " - Ag search
 Bundle 'rking/ag.vim'
+
 " - YouCompleteMe
 "Bundle 'Valloric/YouCompleteMe'
+
 " - Fuzzy file finder
 Bundle 'kien/ctrlp.vim'
+
 " - Git integration with vim
 Bundle 'tpope/vim-fugitive'
+
 " - Syntax checker
 Bundle 'vim-syntastic/syntastic'
+
 " - python-mode
 "Bundle 'klen/python-mode'
+
 " - Conda support for vim
 " Note: This seems to fix the issue with loading numpy and matplotlib in
 " jedi-vim
 Bundle 'cjrh/vim-conda'
 
+" - Vimux
+Bundle 'benmills/vimux'
 
 filetype plugin indent on
 
