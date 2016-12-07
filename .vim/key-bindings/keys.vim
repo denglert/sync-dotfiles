@@ -26,7 +26,11 @@ let g:NumberToggleTrigger="<C-l>"
 
 
 " --- Perform arithmetic calculation --- "
+" - Integer accuracy
 nnoremap Q 0yt=A<C-r>=<C-r>"<CR><Esc>
+
+" - Floating point accuracy
+nnoremap <Leader>ma yyp^y$V:!perl -e '$x = <C-R>"; print $x'<CR>-y0j0P
 
 " - Easier moving of code blocks
 " Try to go into visual mode (v), thenselect several lines of code here and
