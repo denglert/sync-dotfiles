@@ -24,10 +24,18 @@ if [ -f ~/.bash_local ]; then
     . ~/.bash_local
 fi
 
-##################################
+#########################################
+
+#######################
+### --- Scripts --- ###
+#######################
 
 # - Source bashmarks
-source ~/.local/bin/bashmarks.sh
+if [ -f ~/.local/bin/bashmarks.sh ]; then
+	. ~/.local/bin/bashmarks.sh
+fi
 
 # - Source utilfunctions
-source ~/.local/bin/utilfunctions.sh
+if [ -f . ~/.local/bin/utilfunctions.sh ]; then
+	. ~/.local/bin/utilfunctions.sh
+fi

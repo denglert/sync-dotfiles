@@ -18,3 +18,8 @@ hi Normal ctermbg=none
 let g:solarized_visibility = "high"
 let g:solarized_contrast = "high"
 let g:solarized_bold = 1
+
+" --- vim-fugitive settings --- "
+" - Makes the quickfix window open up when you
+"   execute :Glog 
+autocmd QuickFixCmdPost *grep* cwindow
