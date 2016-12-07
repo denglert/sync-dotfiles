@@ -23,3 +23,6 @@ let g:solarized_bold = 1
 " - Makes the quickfix window open up when you
 "   execute :Glog 
 autocmd QuickFixCmdPost *grep* cwindow
+
+" --- vim-syntastic settings --- "
+let g:syntastic_mode_map = { 'mode': 'passive', 'active_filetypes': [],'passive_filetypes': [] }

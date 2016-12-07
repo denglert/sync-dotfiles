@@ -24,7 +24,6 @@ vnoremap <C-i> :call Incr()<CR>
 " --- vim-multiple-cursors settings --- "
 let g:NumberToggleTrigger="<C-l>"
 
-
 " --- Perform arithmetic calculation --- "
 nnoremap Q 0yt=A<C-r>=<C-r>"<CR><Esc>
 
@@ -39,3 +38,6 @@ let mapleader = ","
 
 " map sort function to a key
 vnoremap <Leader>s :sort<CR>
+
+" --- vim-syntastic toggle --- "
+nnoremap <C-w>E :SyntasticCheck<CR> :SyntasticToggleMode<CR>
