@@ -20,6 +20,13 @@ lsm ()
 		ls -l | grep --color $1
 		}
 
+f ()
+{
+		echo -e "find files for: $1"
+		echo -e "Executed command: find . -name "*${1}*"\nResults:"
+		find . -name "*${1}*"
+}
+
 mounteos ()
 		{
 		eosmount /afs/cern.ch/work/d/denglert/public/eos

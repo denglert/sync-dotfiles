@@ -31,3 +31,6 @@ alias dotstatus="cd ~/lib/sys-config/sync-dotfiles; git status; cd -"
 alias tmux="tmux -2"
 alias att="tmux -2 a -t"
 alias det="tmux detach"
+
+# - Switch to python 2.7 with conda
+alias py27="source activate py27"
