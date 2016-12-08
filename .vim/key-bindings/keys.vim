@@ -1,3 +1,6 @@
+" - Leader key binding
+let mapleader = ","
+
 " Nerd toggle
 nmap <F2> :NERDTreeToggle<cr>
 nmap <F3> :NERDTreeFind<cr>
@@ -37,8 +40,6 @@ nnoremap <Leader>ma yyp^y$V:!perl -e '$x = <C-R>"; print $x'<CR>-y0j0P
 vnoremap < <gv  " better indentation
 vnoremap > >gv  " better indentation
 
-" - Leader key binding
-let mapleader = ","
 
 " map sort function to a key
 vnoremap <Leader>s :sort<CR>

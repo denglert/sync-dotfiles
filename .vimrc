@@ -69,7 +69,7 @@ Bundle 'rking/ag.vim'
 "Bundle 'Valloric/YouCompleteMe'
 
 " - Fuzzy file finder
-Bundle 'kien/ctrlp.vim'
+Bundle 'ctrlpvim/ctrlp.vim'
 
 " - Git integration with vim
 Bundle 'tpope/vim-fugitive'
