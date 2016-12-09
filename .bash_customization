@@ -27,6 +27,31 @@ PS1+='\[${DEFAULT}\]'
 PS1+=':\w\$'
 PS1+='\[${WHITE}\] '
 
+PS1_default()
+{
+	PS1='\[${BLUE}\]'
+	PS1+='\u'
+	PS1+='\[${DEFAULT}\]'
+	PS1+='@'
+	PS1+='\[\e[34m\]'
+	PS1+='\h'
+	PS1+='\[${DEFAULT}\]'
+	PS1+=':\w\$'
+	PS1+='\[${WHITE}\] '
+}
+
+PS1_short()
+{
+	PS1='\[${BLUE}\]'
+	PS1+='\u'
+	PS1+='\[${DEFAULT}\]'
+	PS1+='@'
+	PS1+='\[\e[34m\]'
+	PS1+='\h'
+	PS1+='\[${DEFAULT}\]'
+	PS1+=':\W\$'
+	PS1+='\[${WHITE}\] '
+}
 
 EC() { echo -e '\033[1;31m'Error, code: $?'\033[m'; }
 trap EC ERR

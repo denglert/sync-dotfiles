@@ -39,3 +39,8 @@ fi
 if [ -f ~/.local/bin/utilfunctions.sh ]; then
 	. ~/.local/bin/utilfunctions.sh
 fi
+
+# - Source tmux
+if [ -f ~/.local/bin/tmux.sh ]; then
+	. ~/.local/bin/tmux.sh
+fi
