@@ -55,5 +55,12 @@ map <Leader>p :call VimuxRunCommand("clear; python " . bufname("%"))<CR>
 
 " --- Git commands --- "
 map <Leader>gs :Gstatus<CR>
-map <Leader>gw :!git add . && git commit -m "Work in progress." && git push<CR>
+map <Leader>gp :Gpush<CR>
+map <Leader>gb :Gbrowse<CR>
+map <Leader>gd :Gdiff<CR>
+map <Leader>gg :Gpull<CR>
+map <Leader>gl :Glog<CR>
+map <Leader>gw :Gwrite<CR>
+map <Leader>gc :Gcommit<CR>
+map <Leader>gwp :!git add . && git commit -m "Work in progress." && git push<CR>
 map <Leader>gcp :!git add . && git commit && git push<CR>
