@@ -100,4 +100,3 @@ color solarized
 " Tilde colour is same as the default colour
 " 12 = default colour
 highlight NonText ctermfg=12
-
