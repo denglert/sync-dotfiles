@@ -35,3 +35,12 @@ alias tns='tmux new-session -s'
 
 # - Switch to python 2.7 with conda
 alias py27="source activate py27"
+
+# - git
+alias gs="git status"
+alias ga="git add"
+alias gp="git push"
+alias gd="git diff"
+alias gp="git push"
+alias gc="git commit"
+alias gcm="git commit -m"
