@@ -41,6 +41,9 @@ vnoremap < <gv  " better indentation
 vnoremap > >gv  " better indentation
 
 
+" -- Leader commands --- "
+map <Leader>q :q<CR>
+
 " map sort function to a key
 vnoremap <Leader>s :sort<CR>
 
@@ -49,3 +52,8 @@ nnoremap <C-w>E :SyntasticCheck<CR> :SyntasticToggleMode<CR>
 
 " --- Vimux run python --- "
 map <Leader>p :call VimuxRunCommand("clear; python " . bufname("%"))<CR>
+
+" --- Git commands --- "
+map <Leader>gs :Gstatus<CR>
+map <Leader>gw :!git add . && git commit -m "Work in progress." && hit push<CR>
+
