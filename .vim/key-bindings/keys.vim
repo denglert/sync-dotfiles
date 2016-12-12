@@ -51,7 +51,7 @@ vnoremap <Leader>s :sort<CR>
 nnoremap <C-w>E :SyntasticCheck<CR> :SyntasticToggleMode<CR>
 
 " --- Vimux run python --- "
-map <Leader>p :call VimuxRunCommand("clear; python " . bufname("%"))<CR>
+map <Leader>p :call VimuxRunCommand("clear; python " . expand("%:p"))<CR>
 
 " --- Git commands --- "
 map <Leader>gs :Gstatus<CR>
