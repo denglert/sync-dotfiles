@@ -442,6 +442,7 @@ endif
 
 syn keyword pythonClass class
 syn keyword pythonSelf  self
+syn keyword pythonCls  cls
 
 "
 " Builtin exceptions and warnings

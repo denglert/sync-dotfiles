@@ -797,6 +797,7 @@ exe "hi! javaScript"        .s:fmt_none .s:fg_yellow .s:bg_none
 " ---------------------------------------------------------------------
 exe "hi! pythonClass"    "ctermfg='136'" "cterm='NONE,bold,underline'"
 exe "hi! pythonSelf"     .s:fmt_none .s:fg_orange  .s:bg_none   
+exe "hi! pythonCls"      .s:fmt_none .s:fg_orange  .s:bg_none   
 "}}}
 
 " perl highlighting "{{{
