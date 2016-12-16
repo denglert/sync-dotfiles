@@ -88,6 +88,10 @@ Bundle 'cjrh/vim-conda'
 " - Vimux
 Bundle 'benmills/vimux'
 
+" - Python folds
+" Tested, doesn't really work.
+" Bundle 'tmhedberg/SimpylFold'
+
 filetype plugin indent on
 
 " - Color scheme - "

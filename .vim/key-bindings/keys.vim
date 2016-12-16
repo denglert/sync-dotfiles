@@ -64,3 +64,17 @@ map <Leader>gw :Gwrite<CR>
 map <Leader>gc :Gcommit<CR>
 map <Leader>gwp :!git add . && git commit -m "Work in progress." && git push<CR>
 map <Leader>gcp :!git add . && git commit && git push<CR>
+
+map <Leader>diff :windo diffthis<CR>
+
+"nnoremap <leader>diff :call VimDiffToggle()<cr>
+"
+"function! VimDiffToggle()
+"	let isdiff = set diff?
+"	echo isdiff
+"    if isdiff == "nodiff"
+"		windo diffthis
+"    else
+"		diffoff!
+"    endif
+"endfunction
