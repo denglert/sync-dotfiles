@@ -50,7 +50,7 @@ PS1_light()
 	PS1+='\u'
 	PS1+='\[${DEFAULT}\]'
 	PS1+='@'
-	PS1+='\[\e[34m\]'
+	PS1+='\[${ORANGE}\]'
 	PS1+='\h'
 	PS1+='\[${DEFAULT}\]'
 	PS1+=':\W\$'
