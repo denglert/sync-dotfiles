@@ -15,6 +15,11 @@ sloce ()
 		grep -R --color -n --exclude-dir="*${2}*" "$1" ./
 		}
 
+cl ()
+		{
+		cd $1; ls -l
+		}
+
 lsm ()
 		{
 		ls -l | grep --color $1
