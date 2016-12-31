@@ -88,6 +88,9 @@ Bundle 'cjrh/vim-conda'
 " - Vimux
 Bundle 'benmills/vimux'
 
+" - Surround.vim
+Bundle 'tpope/vim-surround'
+
 " - Python folds
 " Tested, doesn't really work.
 " Bundle 'tmhedberg/SimpylFold'
