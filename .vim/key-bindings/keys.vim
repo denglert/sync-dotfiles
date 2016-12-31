@@ -44,8 +44,12 @@ vnoremap > >gv  " better indentation
 " -- Leader commands --- "
 map <Leader>q :q<CR>
 
+" -- Leader commands --- "
+map <Leader>s ysiW
+
+
 " map sort function to a key
-vnoremap <Leader>s :sort<CR>
+vnoremap <Leader>so :sort<CR>
 
 " --- vim-syntastic toggle --- "
 nnoremap <C-w>E :SyntasticCheck<CR> :SyntasticToggleMode<CR>
