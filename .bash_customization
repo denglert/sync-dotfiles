@@ -112,3 +112,6 @@ fi
 
 # -- MC skin --- #
 #export MC_SKIN=$HOME/.mc/solarized.ini
+
+# - vim keys in bash
+set -o vi
