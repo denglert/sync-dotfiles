@@ -18,7 +18,7 @@ set number
 
 " - Formatting - "
 set tabstop   =3
-set textwidth =80
+set textwidth =100
 
 " - Statusline - "
 set laststatus=2
