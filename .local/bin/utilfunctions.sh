@@ -32,6 +32,24 @@ f ()
 		find . -name "*${1}*"
 }
 
+rmod()
+{
+	if [ "$#" -eq 1 ]; then
+		from=$1
+		echo -e "Get all recently modified files from $1 min ago."
+		echo -e "Executed command: find . -type f -mmin -$1"
+		echo -e "Results:"
+		find . -type f -mmin -$1
+	elif [ "$#" -eq 2 ]; then
+		from=$1
+		to=$2
+		echo -e "Get all recently modified files from $1 min ago to $2 min ago."
+		echo -e "Executed command: find . -type f -mmin -$1 -mmin +$2"
+		echo -e "Results:"
+		find . -type f -mmin -$1 -mmin +$2
+	fi
+}
+
 mounteos ()
 		{
 		eosmount /afs/cern.ch/work/d/denglert/public/eos
