@@ -95,6 +95,10 @@ Bundle 'tpope/vim-surround'
 " Tested, doesn't really work.
 " Bundle 'tmhedberg/SimpylFold'
 
+" - Table mode
+Bundle 'dhruvasagar/vim-table-mode'
+
+
 filetype plugin indent on
 
 " - Color scheme - "
