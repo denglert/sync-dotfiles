@@ -98,6 +98,9 @@ Bundle 'tpope/vim-surround'
 " - Table mode
 Bundle 'dhruvasagar/vim-table-mode'
 
+" - Quicktask
+Bundle 'aaronbieber/vim-quicktask'
+
 
 filetype plugin indent on
 
