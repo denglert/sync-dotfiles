@@ -72,6 +72,7 @@ map <Leader>gcp :!git add . && git commit && git push<CR>
 map <Leader>diff :windo diffthis<CR>
 
 " --- Latex commands
+map <Leader>lc :!touch pres.tex; make<CR>
 map <Leader>li :r ~/.vim/template/latex/itemize.ltx<CR> j A
 map <Leader>lg :r ~/.vim/template/latex/graphics.ltx<CR> f/
 
