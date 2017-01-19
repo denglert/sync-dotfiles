@@ -72,6 +72,7 @@ trap '[[ -t 1 ]] && tput sgr0' DEBUG
 
 # - mc editor is vim
 export EDITOR=vim
+export VIEWER=vim
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
