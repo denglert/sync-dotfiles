@@ -50,6 +50,13 @@ rmod()
 	fi
 }
 
+
+watch_threads()
+{
+	watch -n 1 "ps hH $1 | wc -l"
+}
+
+
 mounteos ()
 		{
 		eosmount /afs/cern.ch/work/d/denglert/public/eos
