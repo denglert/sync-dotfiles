@@ -50,6 +50,11 @@ rmod()
 	fi
 }
 
+count_f()
+{
+	find . -type f | wc -l
+}
+
 
 watch_threads()
 {
