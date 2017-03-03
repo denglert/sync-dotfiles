@@ -76,6 +76,11 @@ map <Leader>lc :!touch pres.tex; make<CR>
 map <Leader>li :r ~/.vim/template/latex/itemize.ltx<CR> j A
 map <Leader>lg :r ~/.vim/template/latex/graphics.ltx<CR> f/
 
+" --- gnuplot commands
+
+map <Leader>gnu :r ~/.vim/template/gnuplot/skeleton.gnu<CR>
+
+
 "nnoremap <leader>diff :call VimDiffToggle()<cr>
 "
 "function! VimDiffToggle()
