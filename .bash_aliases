@@ -5,11 +5,13 @@ if [ "${SYS}" == "Darwin" ]; then
 	alias l='ls -CF'
 	alias ll='ls -alFh'
 	alias la='ls -A'
+	alias lr='ls -R'
 elif [ "${SYS}" == "Linux" ]; then
 	alias ls='ls --color=auto --group-directories-first'
 	alias ll='ls -alFh --color=auto --group-directories-first'
 	alias l='ls -alFh --color=auto --group-directories-first'
 	alias lt='ls -altrFh --color=auto --group-directories-first'
+	alias lr='ls -R'
 	alias la='ls -A --color=auto'
 	alias grep='grep --color=auto'
 	alias fgrep='fgrep --color=auto'
