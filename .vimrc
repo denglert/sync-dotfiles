@@ -83,7 +83,7 @@ Bundle 'vim-syntastic/syntastic'
 " - Conda support for vim
 " Note: This seems to fix the issue with loading numpy and matplotlib in
 " jedi-vim
-Bundle 'cjrh/vim-conda'
+"Bundle 'cjrh/vim-conda'
 
 " - Vimux
 Bundle 'benmills/vimux'
