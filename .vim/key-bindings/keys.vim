@@ -78,8 +78,10 @@ map <Leader>bo :exe ':silent !firefox %:p'<CR>
 " --- Latex commands
 
 map <Leader>lc :!touch *.tex; make<CR>
-map <Leader>li :r ~/.vim/template/latex/itemize.ltx<CR> j A
-map <Leader>lg :r ~/.vim/template/latex/graphics.ltx<CR> f/
+map <Leader>li :r ~/.vim/template/latex/itemize.tex<CR> j A
+map <Leader>lg :r ~/.vim/template/latex/graphics.tex<CR> f/
+map <Leader>le :r ~/.vim/template/latex/equation.tex<CR>jA
+map <Leader>les :r ~/.vim/template/latex/equationstar.tex<CR>jA
 
 " --- gnuplot commands
 
