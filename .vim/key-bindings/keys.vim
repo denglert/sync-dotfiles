@@ -87,6 +87,10 @@ map <Leader>les :r ~/.vim/template/latex/equationstar.tex<CR>jA
 
 map <Leader>gnu :r ~/.vim/template/gnuplot/skeleton.gnu<CR>
 
+" --- Markdown commands
+
+imap <Leader>msb <sub></sub><Esc>5hi
+imap <Leader>msp <sup></sup><Esc>5hi
 
 "nnoremap <leader>diff :call VimDiffToggle()<cr>
 "
