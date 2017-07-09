@@ -15,8 +15,6 @@ vmap s <plug>(easymotion-s2)
 " Custom key mapping
 :imap jj <Esc>
 
-nmap -= i// Debuggg <CR><BS><BS><BS>>std::cerr << " " << std::endl;<Esc>6bli
-imap -= // Debuggg <CR><BS><BS><BS>std::cerr << " " << std::endl;<Esc>6bli
 
 nmap 0p :!gnuplot %
 nmap 0l :!latexmk -pdf %
@@ -74,6 +72,12 @@ map <Leader>diff :windo diffthis<CR>
 " --- Browser commands
 
 map <Leader>bo :exe ':silent !firefox %:p'<CR>
+
+" --- C++ commands
+
+map <Leader>cdg :r ~/.vim/template/C++/debug.cpp<CR> jf"li
+"nmap -= i// Debuggg <CR><BS><BS><BS>>std::cerr << " " << std::endl;<Esc>6bli
+"imap -= // Debuggg <CR><BS><BS><BS>std::cerr << " " << std::endl;<Esc>6bli
 
 " --- Latex commands
 
