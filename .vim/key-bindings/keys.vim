@@ -87,6 +87,13 @@ map <Leader>les :r ~/.vim/template/latex/equationstar.tex<CR>jA
 
 map <Leader>gnu :r ~/.vim/template/gnuplot/skeleton.gnu<CR>
 
+" --- Makefile
+
+map <Leader>cpp :r ~/.vim/template/C++/cpp.cc<CR>
+
+" --- Makefile
+
+map <Leader>mcpp :r ~/.vim/template/Makefile/cpp_project.Makefile<CR>
 
 "nnoremap <leader>diff :call VimDiffToggle()<cr>
 "
