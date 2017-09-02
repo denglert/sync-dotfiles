@@ -37,7 +37,11 @@ alias tls="tmux ls"
 alias tns='tmux new-session -s'
 
 # - Switch to python 2.7 with conda
+alias workon="source activate"
 alias py27="source activate py27"
+
+# - Get path
+alias getp="readlink -f"
 
 # - git
 alias gs="git status"

@@ -1,1 +1,4 @@
-changeps1: False
+changeps1: false
+channels:
+  - https://conda.anaconda.org/NLeSC
+  - defaults

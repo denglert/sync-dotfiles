@@ -15,8 +15,6 @@ vmap s <plug>(easymotion-s2)
 " Custom key mapping
 :imap jj <Esc>
 
-nmap -= i// Debuggg <CR><BS><BS><BS>>std::cerr << " " << std::endl;<Esc>6bli
-imap -= // Debuggg <CR><BS><BS><BS>std::cerr << " " << std::endl;<Esc>6bli
 
 nmap 0p :!gnuplot %
 nmap 0l :!latexmk -pdf %
@@ -75,6 +73,14 @@ map <Leader>diff :windo diffthis<CR>
 
 map <Leader>bo :exe ':silent !firefox %:p'<CR>
 
+" --- C++ commands
+
+map <Leader>cdg :r ~/.vim/template/C++/debug.cpp<CR> jf"li
+map <Leader>cpp :r ~/.vim/template/C++/cpp.cc<CR>
+
+"nmap -= i// Debuggg <CR><BS><BS><BS>>std::cerr << " " << std::endl;<Esc>6bli
+"imap -= // Debuggg <CR><BS><BS><BS>std::cerr << " " << std::endl;<Esc>6bli
+
 " --- Latex commands
 
 map <Leader>lc :!touch *.tex; make<CR>
@@ -89,11 +95,12 @@ map <Leader>gnu :r ~/.vim/template/gnuplot/skeleton.gnu<CR>
 
 " --- Makefile
 
-map <Leader>cpp :r ~/.vim/template/C++/cpp.cc<CR>
-
-" --- Makefile
-
 map <Leader>mcpp :r ~/.vim/template/Makefile/cpp_project.Makefile<CR>
+
+" --- Markdown commands
+
+imap <Leader>msb <sub></sub><Esc>5hi
+imap <Leader>msp <sup></sup><Esc>5hi
 
 "nnoremap <leader>diff :call VimDiffToggle()<cr>
 "
