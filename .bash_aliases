@@ -18,6 +18,8 @@ elif [ "${SYS}" == "Linux" ]; then
 	alias egrep='egrep --color=auto'
 fi
 
+alias v="vim"
+
 # - Change directory
 alias ..="cd .."
 alias ...="cd ../.."
