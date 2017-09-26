@@ -1,5 +1,7 @@
 # Documentation for `<name-of-source-code-file>`
 
+## Usage
+
 ## References
 
 ## What it does
