@@ -89,6 +89,10 @@ map <Leader>lg :r ~/.vim/template/latex/graphics.tex<CR> f/
 map <Leader>le :r ~/.vim/template/latex/equation.tex<CR>jA
 map <Leader>les :r ~/.vim/template/latex/equationstar.tex<CR>jA
 
+" --- Documentation bindings
+
+map <Leader>doc :r ~/.vim/template/docs/code_docs.md<CR>
+
 " --- gnuplot commands
 
 map <Leader>gnu :r ~/.vim/template/gnuplot/skeleton.gnu<CR>
