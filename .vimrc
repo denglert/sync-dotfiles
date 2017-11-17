@@ -77,6 +77,10 @@ Bundle 'tpope/vim-fugitive'
 " - Syntax checker
 Bundle 'vim-syntastic/syntastic'
 
+" - github flavour Markdown
+Bundle 'godlygeek/tabular'
+Bundle 'plasticboy/vim-markdown'
+
 " - python-mode
 "Bundle 'klen/python-mode'
 
