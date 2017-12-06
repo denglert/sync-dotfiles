@@ -88,6 +88,7 @@ map <Leader>li :r ~/.vim/template/latex/itemize.tex<CR> j A
 map <Leader>lg :r ~/.vim/template/latex/graphics.tex<CR> f/
 map <Leader>le :r ~/.vim/template/latex/equation.tex<CR>jA
 map <Leader>les :r ~/.vim/template/latex/equationstar.tex<CR>jA
+map <Leader>lt :r ~/.vim/template/latex/table.tex<CR>
 
 " --- Documentation bindings
 
