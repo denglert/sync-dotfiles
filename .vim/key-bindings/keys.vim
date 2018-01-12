@@ -22,8 +22,10 @@ nmap 0k :!tdr --style=note b AN
 
 vnoremap <C-i> :call Incr()<CR>
 
-" --- vim-multiple-cursors settings --- "
+" --- vim-numbertoggle settings --- "
 let g:NumberToggleTrigger="<C-l>"
+nnoremap <silent> <C-l> :set relativenumber!<cr>
+set number norelativenumber
 
 " --- Perform arithmetic calculation --- "
 " - Integer accuracy
