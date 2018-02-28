@@ -110,7 +110,7 @@ endif
 
 " - NERDTree tab open at the end FIX
 " move tabs to the end for new, single buffers (exclude splits)
-autocmd BufNew * if winnr('$') == 1 | tabmove99 | endif
+"autocmd BufNew * if winnr('$') == 1 | tabmove99 | endif
 
 " - Fixes weird characters in NERDTREE
 let g:NERDTreeDirArrows=0
