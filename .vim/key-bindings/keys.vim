@@ -85,7 +85,11 @@ map <Leader>cpp :r ~/.vim/template/C++/cpp.cc<CR>
 
 " --- Latex commands
 
-map <Leader>lc :!touch *.tex; touch src/*.tex; make<CR>
+"map <Leader>lc :!touch expand('%:p'); make<CR>
+"map <Leader>lc :call system('touch ' . expand('%:p') . ':' . line('.'))<CR>!make<>
+"
+map <Leader>lc :!touch %:p; make<CR>
+
 map <Leader>li :r ~/.vim/template/latex/itemize.tex<CR> j A
 map <Leader>lg :r ~/.vim/template/latex/graphics.tex<CR> f/
 map <Leader>le :r ~/.vim/template/latex/equation.tex<CR>jA
