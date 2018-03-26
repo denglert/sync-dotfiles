@@ -89,6 +89,7 @@ map <Leader>cpp :r ~/.vim/template/C++/cpp.cc<CR>
 "map <Leader>lc :call system('touch ' . expand('%:p') . ':' . line('.'))<CR>!make<>
 "
 map <Leader>lc :!touch %:p; make<CR>
+map <Leader>lco :r ~/.vim/template/latex/columns.tex<CR>
 
 map <Leader>li :r ~/.vim/template/latex/itemize.tex<CR> j A
 map <Leader>lg :r ~/.vim/template/latex/graphics.tex<CR> f/
