@@ -54,7 +54,9 @@ Bundle 'tpope/vim-obsession'
 " Bundle 'altercation/vim-colors-solarized'
 
 " - Relative/absolute line number toggle
-Bundle 'jeffkreeftmeijer/vim-numbertoggle'
+" Turned off as it makes vim slow when scrolling
+" see: https://github.com/jeffkreeftmeijer/vim-numbertoggle/issues/33
+" Bundle 'jeffkreeftmeijer/vim-numbertoggle'
 
 " - Autocompletion library for vim
 Bundle 'davidhalter/jedi-vim.git'
