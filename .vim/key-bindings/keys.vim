@@ -115,6 +115,10 @@ map <Leader>mcpp :r ~/.vim/template/Makefile/cpp_project.Makefile<CR>
 imap <Leader>msb <sub></sub><Esc>5hi
 imap <Leader>msp <sup></sup><Esc>5hi
 
+
+" - Toggle between paste mode
+set pastetoggle=<Leader>tp
+
 "nnoremap <leader>diff :call VimDiffToggle()<cr>
 "
 "function! VimDiffToggle()
