@@ -7,8 +7,7 @@
 # - Source global definitions
 if [ -f /etc/bashrc ]; then
 	. /etc/bashrc
-fi
-
+fi 
 # - Useful aliases and functions
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
