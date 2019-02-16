@@ -1,7 +1,7 @@
 " --------------------- "
 " ---    .vimrc     --- "
 " --------------------- "
-"
+
 " - Import - "
 source ~/.vim/general/general.vim
 source ~/.vim/macros/macros.vim
@@ -13,7 +13,6 @@ source ~/.vim/plugin/settings.vim
 if filereadable(expand("~/.vimrc_local"))
 	source ~/.vimrc_local
 endif
-
 
 " - Show line number - "
 set number
@@ -29,21 +28,20 @@ set statusline=%f\ \ \ \ %l\:%c
 " l = line number
 " c = column number
 
-" Make prg
-set makeprg=g++\ -o\ %<\ %
-
-" - Required for Vundle - "
-filetype off
-
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+" Program to use for the make command
+" set makeprg=g++\ -o\ %<\ %
 
 """""""""""""""""""""
 " ---  Packages --- "
 """""""""""""""""""""
 
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
 source ~/.vim/packages/packages.vim
 
+" - Required for Vundle - "
+filetype off
 
 """"""""""""""""""""""""
 """ --- Filetype --- """
