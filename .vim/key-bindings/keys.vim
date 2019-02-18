@@ -177,3 +177,12 @@ imap <Leader>msp <sup></sup><Esc>5hi
 set pastetoggle=<Leader>tp
 
 
+"""""""""""""""""""""""""
+""" --- EasyAlign --- """
+"""""""""""""""""""""""""
+
+" Start interactive EasyAlign in visual mode (e.g. vipga)
+xmap ga <Plug>(EasyAlign)
+
+" Start interactive EasyAlign for a motion/text object (e.g. gaip)
+nmap ga <Plug>(EasyAlign)

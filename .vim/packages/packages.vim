@@ -72,3 +72,6 @@ Bundle 'dhruvasagar/vim-table-mode'
 
 " - Quicktask
 Bundle 'aaronbieber/vim-quicktask'
+
+" - vim-easy-align
+Bundle 'junegunn/vim-easy-align'
