@@ -52,6 +52,7 @@ rmod()
 
 count_f()
 {
+	echo -e "find . -type f | wc -l"
 	find . -type f | wc -l
 }
 
