@@ -12,3 +12,5 @@
 	tool = vimdiff
 [push]
 	default = matching
+[core]
+	pager = less
