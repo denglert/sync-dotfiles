@@ -7,7 +7,7 @@ source ~/.vim/general/general.vim
 source ~/.vim/macros/macros.vim
 source ~/.vim/functions/functions.vim
 source ~/.vim/key-bindings/keys.vim
-source ~/.vim/plugin/settings.vim
+source ~/.vim/packages/settings.vim
 
 " - Import local vimrc if it exists
 if filereadable(expand("~/.vimrc_local"))

@@ -14,7 +14,6 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'tpope/vim-obsession' 
 
 "Bundle 'scrooloose/nerdcommenter'
-"Bundle 'msanders/snipmate.vim'
 
 " - Solarized colorscheme
 " Bundle 'altercation/vim-colors-solarized'
@@ -34,7 +33,7 @@ Bundle 'terryma/vim-multiple-cursors'
 Bundle 'rking/ag.vim'
 
 " - YouCompleteMe
-"Bundle 'Valloric/YouCompleteMe'
+Bundle 'Valloric/YouCompleteMe'
 
 " - Fuzzy file finder
 Bundle 'ctrlpvim/ctrlp.vim'
@@ -75,3 +74,9 @@ Bundle 'aaronbieber/vim-quicktask'
 
 " - vim-easy-align
 Bundle 'junegunn/vim-easy-align'
+
+" - LaTeX plugin
+Bundle 'lervag/vimtex'
+
+" - snippets
+Bundle 'SirVer/ultisnips'
