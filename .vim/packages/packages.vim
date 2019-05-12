@@ -33,7 +33,7 @@ Bundle 'terryma/vim-multiple-cursors'
 Bundle 'rking/ag.vim'
 
 " - YouCompleteMe
-Bundle 'Valloric/YouCompleteMe'
+"Bundle 'Valloric/YouCompleteMe'
 
 " - Fuzzy file finder
 Bundle 'ctrlpvim/ctrlp.vim'
@@ -79,4 +79,4 @@ Bundle 'junegunn/vim-easy-align'
 Bundle 'lervag/vimtex'
 
 " - snippets
-Bundle 'SirVer/ultisnips'
+"Bundle 'SirVer/ultisnips'
