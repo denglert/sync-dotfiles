@@ -24,7 +24,12 @@ Bundle 'tpope/vim-obsession'
 " Bundle 'jeffkreeftmeijer/vim-numbertoggle'
 
 " - Autocompletion library for vim
-Bundle 'davidhalter/jedi-vim.git'
+"Bundle 'davidhalter/jedi-vim.git'
+
+" - Conda support for vim
+" Note: This seems to fix the issue with loading numpy and matplotlib in
+" jedi-vim
+"Bundle 'cjrh/vim-conda'
 
 " - Sublime like multiple cursors
 Bundle 'terryma/vim-multiple-cursors'
@@ -33,7 +38,7 @@ Bundle 'terryma/vim-multiple-cursors'
 Bundle 'rking/ag.vim'
 
 " - YouCompleteMe
-"Bundle 'Valloric/YouCompleteMe'
+Bundle 'Valloric/YouCompleteMe'
 
 " - Fuzzy file finder
 Bundle 'ctrlpvim/ctrlp.vim'
@@ -50,11 +55,6 @@ Bundle 'plasticboy/vim-markdown'
 
 " - python-mode
 "Bundle 'klen/python-mode'
-
-" - Conda support for vim
-" Note: This seems to fix the issue with loading numpy and matplotlib in
-" jedi-vim
-"Bundle 'cjrh/vim-conda'
 
 " - Vimux
 Bundle 'benmills/vimux'
@@ -78,5 +78,8 @@ Bundle 'junegunn/vim-easy-align'
 " - LaTeX plugin
 Bundle 'lervag/vimtex'
 
-" - snippets
-"Bundle 'SirVer/ultisnips'
+" - ultisnip
+Bundle 'sirver/ultisnips'
+
+" - snippets are shipped separately
+Bundle 'honza/vim-snippets'
