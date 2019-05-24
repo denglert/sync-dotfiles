@@ -146,6 +146,8 @@ map <Leader>lal :r ~/.vim/template/latex/aligned.tex<CR>jjA
 map <Leader>les :r ~/.vim/template/latex/equationstar.tex<CR>jA
 map <Leader>lt :r ~/.vim/template/latex/table.tex<CR>
 
+"map <Leader>ledef :r ~/.vim/template/latex/Definition.tex<CR>
+
 """""""""""""""""""""""""""""
 """ --- Documentation --- """
 """""""""""""""""""""""""""""
