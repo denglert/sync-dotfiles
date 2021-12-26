@@ -23,6 +23,12 @@ if [ -f ~/.bash_local ]; then
     . ~/.bash_local
 fi
 
+# - Local, host specific user defined environment variables are loaded from here
+if [ -f ~/.q/qsetup.sh ]; then
+    . ~/.q/qsetup.sh
+fi
+
+
 #########################################
 
 #######################
