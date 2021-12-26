@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
 
-QINIT=~/.q/
+export QINIT=~/.q/qinit.q
+export QPATH=~/lib/links/qpath/
